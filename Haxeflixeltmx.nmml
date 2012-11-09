@@ -4,7 +4,7 @@
 	<app title="Haxeflixeltmx" file="Haxeflixeltmx" main="Main" version="0.0.1" company="Zaphod" />
 	
 	<window width="640" height="480" fps="30" orientation="portrait" resizable="false" if="target_flash" />
-	<window width="0" height="0" fps="30" orientation="landscape" fullscreen="true" unless="target_flash" resizable="false" hardware="false" />
+	<window width="0" height="0" fps="60" orientation="landscape" fullscreen="true" unless="target_flash" resizable="false" hardware="false" vsync="true" />
  	
 	<set name="BUILD_DIR" value="Export" />
 	

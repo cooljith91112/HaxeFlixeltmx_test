@@ -18,10 +18,10 @@ class Level1 extends FlxState
 	{
 		player = new FlxSprite();
 		
-		var tmx:TmxMap = new TmxMap(Assets.getText("maps/mylevel.tmx"));
+		var tmx:TmxMap = new TmxMap(Assets.getText("maps/level1.tmx"));
 		tilemap = new FlxTilemap();
 		var mapCsv:String = tmx.getLayer('layer1').toCsv(tmx.getTileSet('tileset'));
-		tilemap.loadMap(mapCsv, "assets/maps/tiles.png", 8, 8, FlxTilemap.OFF);
+		tilemap.loadMap(mapCsv, "assets/maps/area01_level_tiles.png", 16, 16, FlxTilemap.OFF);
 		add(tilemap);
 		player.loadGraphic("assets/player.png");
 		player.y = 25;
