@@ -3,8 +3,8 @@
 	
 	<app title="Haxeflixeltmx" file="Haxeflixeltmx" main="Main" version="0.0.1" company="Zaphod" />
 	
-	<window width="640" height="480" fps="30" orientation="portrait" resizable="true" if="target_flash" />
-	<window width="0" height="0" fps="30" orientation="landscape" fullscreen="true" unless="target_flash" />
+	<window width="640" height="480" fps="30" orientation="portrait" resizable="false" if="target_flash" />
+	<window width="0" height="0" fps="30" orientation="landscape" fullscreen="true" unless="target_flash" resizable="false" hardware="false" />
  	
 	<set name="BUILD_DIR" value="Export" />
 	
@@ -39,8 +39,7 @@
 		<!-- Your sound embedding code here... -->
 		
 	</assets>
-		<assets path="assets/maps" rename="maps" include="*.tmx" type="text" /> 
-		<assets path="assets/levels" rename="levels" include="*.tmx" type="text" /> 
+	<assets path="assets/maps" rename="maps" include="*.tmx" type="text" /> 
 	<assets path="assets/data" include="*.ttf" type="font" />
 	<assets path="assets" include="*.fgr" type="text" />
 	<assets path="assets" include="*.csv" type="text" />
